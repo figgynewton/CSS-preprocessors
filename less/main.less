@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+}
+
+html{
+  background-color: @mainColor;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 150px 100px 150px 100px;
+}
+
+div.container > div:nth-child(1){
+    .boxes(@box1Color, 100px)
+  }
+
+div.container > div:nth-child(2){
+  .boxes(@box2Color, 200px)
+}
+
+div.container > div:nth-child(3){
+    .boxes(@box3Color, 250px)
+  }
+
+div.container > div:nth-child(4){
+    .boxes(@box4Color, 50px)
+  }
